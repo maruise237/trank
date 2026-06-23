@@ -1,0 +1,39 @@
+interactions:
+- request:
+    body: '[{"keyword":"ratatouille recipe","location_code":1023289,"language_code":"fr","depth":100}]'
+    headers:
+      Authorization: Basic dGVzdCBAbG9naW46cHdk
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://api.dataforseo.com/v3/serp/google/organic/live/advanced
+  response:
+    body:
+      encoding: utf-8
+      string: '{"tasks": [{"id": "", "status_code": 200, "status_message": "Ok.",
+        "time": "0.1234", "cost": 0.0006, "result_count": 1, "path": ["https://api.dataforseo.com/v3/serp/google/organic/live/advanced"],
+        "data": {}, "result": [{"keyword": "ratatouille recipe", "type": "organic",
+        "se_domain": "google.fr", "check_url": "https://www.google.fr/search?q=ratatouille+recipe&hl=fr&num=100",
+        "datetime": "2024-01-15 03:00:00 +00:00", "item_types": ["organic", "people_also_ask",
+        "related_searches"], "se_results_count": 45600000, "se_type": "organic", "location_code":
+        1023289, "location_name": "Paris", "language_code": "fr", "search_volume":
+        135000, "items": [{"type": "people_also_ask", "position": 0, "xpath": "/html[1]",
+        "title": "What is the difference between ratatouille and confit byaldi?",
+        "items": [{"type": "people_also_ask_element", "title": "What is the difference
+        between ratatouille and confit byaldi?", "description": "Ratatouille is a
+        traditional French...", "url": "https://en.wikipedia.org/wiki/Ratatouille",
+        "domain": "en.wikipedia.org"}]}, {"type": "organic", "position": 1, "xpath":
+        "/html[1]", "title": "Ratatouille Recipe - Allrecipes", "url": "https://www.allrecipes.com/recipe/12442/ratatouille/",
+        "domain": "allrecipes.com", "description": "A classic French vegetable stew...",
+        "breadcrumb": "Recipes > World Cuisine > European > French", "se_type": "organic",
+        "rank_group": 1, "rank_absolute": 1}, {"type": "organic", "position": 2, "xpath":
+        "/html[1]", "title": "La Vraie Ratatouille - Marmiton", "url": "https://www.marmiton.org/recettes/recette_ratatouille.34120.aspx",
+        "domain": "marmiton.org", "description": "La recette traditionnelle de la
+        ratatouille...", "breadcrumb": "Recettes > Legumes", "se_type": "organic",
+        "rank_group": 2, "rank_absolute": 2}]}]}]}'
+    headers:
+      Content-Type:
+      - application/json
+    status:
+      code: 200
+      message: OK
